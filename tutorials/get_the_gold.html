@@ -1,175 +1,175 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Get the Gold</title>
-  <link rel="stylesheet" href="../css/scrollstyle.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="../scripts/utils.js"></script>
-  <script>
-      $(window).bind('resize', function() {
-          console.log("window resized")
-      });
-  </script>
+        <head>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>Get the Gold</title>
+                <link rel="stylesheet" href="../css/scrollstyle.css">
+                <link rel="stylesheet" href="../css/style.css">
+                <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+                <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+                <script src="../scripts/utils.js"></script>
+                <script>
+$(window).bind('resize', function() {
+        console.log("window resized")
+});
+                </script>
 
-  <script>
-      $( function() {
-          $( ".accordion" ).accordion({heightStyle: "content",activate: function( event, ui ) {
-                  sendAnalyticsEvent( {
-                      hitType: 'event',
-                      eventCategory: 'Guide-' + document.getElementById("serverTutorialId").innerHTML,
-                      eventAction: 'headerClick',
-                      eventLabel: ui.newHeader.text()
-                  });
+                <script>
+$( function() {
+        $( ".accordion" ).accordion({heightStyle: "content",activate: function( event, ui ) {
+                sendAnalyticsEvent( {
+                        hitType: 'event',
+                        eventCategory: 'Guide-' + document.getElementById("serverTutorialId").innerHTML,
+                        eventAction: 'headerClick',
+                        eventLabel: ui.newHeader.text()
+                });
 
-              }});
+        }});
 
-          $( ".widget input[type=submit], .widget a, .widget button" ).button();
-          //$( "button, input, a" ).click( );
-      } );
-  </script>
+        $( ".widget input[type=submit], .widget a, .widget button" ).button();
+        //$( "button, input, a" ).click( );
+} );
+                </script>
 
-  <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-31803258-2', 'auto');
-      ga('send', 'pageview');
+ga('create', 'UA-31803258-2', 'auto');
+ga('send', 'pageview');
 
-  </script>
-</head>
-<body>
+                </script>
+        </head>
+        <body>
 
-<div style="width:100%;background-color:#8fc202;color:white;text-align:center;margin-bottom:5px;">
-  <span style="font-size:14pt;font-weight:bold">Mobile App Guide</span>
-</div>
+                <div style="width:100%;background-color:#8fc202;color:white;text-align:center;margin-bottom:5px;">
+                        <span style="font-size:14pt;font-weight:bold">Mobile App Guide</span>
+                </div>
 
-<div style="width:100%;height: 40px;text-align:center;background-color: #f6f6f6;margin-bottom: 10px;">
-  <div id="youthMobilePowerTab" style="float:left;height:30px;width:50%;background-color: #ccdea8;padding-top: 5px;padding-bottom: 5px;">App Guide</div>
-  <div id="howToTab" style="float:left;height:30px;width:50%;background-color: #f6f6f6;padding-top: 5px;padding-bottom: 5px;">How To</div>
-</div>
+                <div style="width:100%;height: 40px;text-align:center;background-color: #f6f6f6;margin-bottom: 10px;">
+                        <div id="youthMobilePowerTab" style="float:left;height:30px;width:50%;background-color: #ccdea8;padding-top: 5px;padding-bottom: 5px;">App Guide</div>
+                        <div id="howToTab" style="float:left;height:30px;width:50%;background-color: #f6f6f6;padding-top: 5px;padding-bottom: 5px;">How To</div>
+                </div>
 
-<div id="newAccordion" class="accordion">
+                <div id="newAccordion" class="accordion">
 
-  <h3>Connect your App</h3>
-  <div class="setup" id="connect_app"></div>
+                        <h3>Connect your App</h3>
+                        <div class="setup" id="connect_app"></div>
 
-  <h3>Get the Gold Tutorial</h3>
+                        <h3>Get the Gold Tutorial</h3>
 
-<div class="tutorialContainer">
+                        <div class="tutorialContainer">
 
-  <div class="tutorialNavigationHeader"></div>
+                                <div class="tutorialNavigationHeader"></div>
 
-  <div class="tutorialContentPage">
-    <h4>1. Introduction</h4>
-    <p>In this game you will be flinging a pirate ship across the screen with your finger!</p>
-    <p>There will be a coin on the screen that you will be trying to catch with your pirate ship.</p>
-    <p>If you don't catch it quick enough a timer will cause it to move to a new location.</p>
+                                <div class="tutorialContentPage">
+                                        <h4>1. Introduction</h4>
+                                        <p>In this game you will be flinging a pirate ship across the screen with your finger!</p>
+                                        <p>There will be a coin on the screen that you will be trying to catch with your pirate ship.</p>
+                                        <p>If you don't catch it quick enough a timer will cause it to move to a new location.</p>
 
-    <!--Insert image of the game-->
-  </div>
+                                        <!--Insert image of the game-->
+                                </div>
 
-  <div class="tutorialContentPage">
-    <h4>2. Fling the Pirate Ship</h4>
-    <p>Drag the when PirateSprite.Flung block onto your viewer.</p>
+                                <div class="tutorialContentPage">
+                                        <h4>2. Fling the Pirate Ship</h4>
+                                        <p>Drag the when PirateSprite.Flung block onto your viewer.</p>
 
-    <img class="enlargeImage" src="images/get_the_gold/pirateShipFlung.gif"></img>
-
-
-    <p></p>
-    <p>Within the block we will set the heading to the passed-in variable heading. This will make the pirate ship go in the direction that you fling it.</p>
-
-    <img class="enlargeImage" src="images/get_the_gold/pirateShipFlungSetHeading.gif"></img>
-    <p></p>
-    <p><b>Test your code.</b> Does your pirate ship move when you fling it?</p>
-  </div>
-
-  <div class="tutorialContentPage">
-    <h4>3. Bounce When On Edge</h4>
-    <p>Now we will make the pirate ship bounce when it touches the edge.</p>
-    <p>Drag out the when PirateSprite.Edge Reached block onto your viewer.</p>  
-    <img class="enlargeImage" src="images/get_the_gold/pirateShipEdgeReached.gif"></img>
-    <p></p>
-    <p>Within this block we will tell the pirate ship to bounce. Drag out the call PirateSprite.Bounce edge block and attach the get edge command.</p>
-    <!--Insert gif-->
-    <p></p>
-    <p><b>Test your code.</b> Does the pirate ship bounce when you fling it at an edge.</p>
-  </div>
-
-  <div class="tutorialContentPage">
-    <h4>4. Colliding With the Coin</h4>
-    <p>Now we will write the code for when the pirate ship collides, or touches, the coin. When they touch, the coin should become invisible.</p>
-    <p>Drag out the <i>when PirateSprite.CollideWith other</i> block along with an <i>if-then</i> statement</p>
-    <img class="enlargeImage" src="images/get_the_gold/pirateCollidedWithIf.gif"></img>
-    <p></p>
-    <p>For the <i>if</i> part of the statement we will say "if the pirate ship collides with the coin..."</p>
-    <img class="enlargeImage" src="images/get_the_gold/pirateCollidedWithIfStatement.gif"></img>
-    <p></p>
-    <p>"...then set the coin's visibility to false." Meaning if the coin is touched, make it disappear.</p>
-    <img class="enlargeImage" src="images/get_the_gold/pirateCollidedWithThenStatement.gif"></img>
-    <p></p>
-    <p><b>Test your code.</b> Does the coin disappear when the pirate ship touches it?</p>
-  </div>
-
-  <div class="tutorialContentPage">
-    <h4>5. Timer</h4>
-    <p>Here we will be using the when Clock1.Timer for when the timer runs out and we want the coin to move to a new location.</p>
-    <img class="enlargeImage" src="images/get_the_gold/clockCallsCoin.gif"></img>
-    <p></p>
-    <p>The coin should move to a new random location that is on the canvas. We will use the random integer function.</p>
-    <img class="enlargeImage" src="images/get_the_gold/clockYPosition.gif"></img>
-    <p></p>
-    <p>To make things easier you can duplicate your blocks for the y-position and change the components accordingly:</p>
-    <img class="enlargeImage" src="images/get_the_gold/clockXPosition.gif"></img>
-    <p></p>
-    <p><b>Test your code.</b> If your pirate ship doesn't touch the coin for a while, does the coin move to a new position?</p>
-  </div>
-
-  <div class="tutorialContentPage">
-    <h4>6. Reset Button</h4>
-    <p>Finally we will set up the reset button so that the coin reappears and the user can play again.</p>
-    <img class="enlargeImage" src="images/get_the_gold/resetButton.gif"></img>
-    <p></p>
-    <p>Using the when ResetButton.Click block, set the coinSprite visibility to true. This will make the coin visible again.</p>
-    <img class="enlargeImage" src="images/get_the_gold/resetVisibility.gif"></img>
-    <p></p>
-    <p><b>Test your code.</b> Does the coin reappear if you press the reset button?</p>
-  </div>
-
-  <div class="tutorialNextButtonContainer" style="width:100%;text-align:center;">
-    <button type="button" class="btn btn-success btn-lg tutorialNextButton" style="font-size:24pt;">Next Step</button>
-  </div>
-
-</div>
-
-<h3>Share your App</h3>
-<div class="setup" id="share_app"></div>
+                                        <img class="enlargeImage" src="images/get_the_gold/pirateShipFlung.gif"></img>
 
 
-<h3>Published apps</h3>
-<div>
-  <div id="container">
-   <div class="projectbox"> 
-    <img class="enlargeImage" src="https://farm3.staticflickr.com/2510/32777057931_d96656a03d_m.jpg" alt="some_text" class="projectimage" />
-    <div class="projecttext"><span> Hello World</span> </div>
-  </div>
-</div>
-</div>
-</div>
+                                        <p></p>
+                                        <p>Within the block we will set the heading to the passed-in variable heading. This will make the pirate ship go in the direction that you fling it.</p>
 
-<div id="howToAccordion" class="accordion" style="display:none">
+                                        <img class="enlargeImage" src="images/get_the_gold/pirateShipFlungSetHeading.gif"></img>
+                                        <p></p>
+                                        <p><b>Test your code.</b> Does your pirate ship move when you fling it?</p>
+                                </div>
+
+                                <div class="tutorialContentPage">
+                                        <h4>3. Bounce When On Edge</h4>
+                                        <p>Now we will make the pirate ship bounce when it touches the edge.</p>
+                                        <p>Drag out the when PirateSprite.Edge Reached block onto your viewer.</p>  
+                                        <img class="enlargeImage" src="images/get_the_gold/pirateShipEdgeReached.gif"></img>
+                                        <p></p>
+                                        <p>Within this block we will tell the pirate ship to bounce. Drag out the call PirateSprite.Bounce edge block and attach the get edge command.</p>
+                                        <!--Insert gif-->
+                                        <p></p>
+                                        <p><b>Test your code.</b> Does the pirate ship bounce when you fling it at an edge.</p>
+                                </div>
+
+                                <div class="tutorialContentPage">
+                                        <h4>4. Colliding With the Coin</h4>
+                                        <p>Now we will write the code for when the pirate ship collides, or touches, the coin. When they touch, the coin should become invisible.</p>
+                                        <p>Drag out the <i>when PirateSprite.CollideWith other</i> block along with an <i>if-then</i> statement</p>
+                                        <img class="enlargeImage" src="images/get_the_gold/pirateCollidedWithIf.gif"></img>
+                                        <p></p>
+                                        <p>For the <i>if</i> part of the statement we will say "if the pirate ship collides with the coin..."</p>
+                                        <img class="enlargeImage" src="images/get_the_gold/pirateCollidedWithIfStatement.gif"></img>
+                                        <p></p>
+                                        <p>"...then set the coin's visibility to false." Meaning if the coin is touched, make it disappear.</p>
+                                        <img class="enlargeImage" src="images/get_the_gold/pirateCollidedWithThenStatement.gif"></img>
+                                        <p></p>
+                                        <p><b>Test your code.</b> Does the coin disappear when the pirate ship touches it?</p>
+                                </div>
+
+                                <div class="tutorialContentPage">
+                                        <h4>5. Timer</h4>
+                                        <p>Here we will be using the when Clock1.Timer for when the timer runs out and we want the coin to move to a new location.</p>
+                                        <img class="enlargeImage" src="images/get_the_gold/clockCallsCoin.gif"></img>
+                                        <p></p>
+                                        <p>The coin should move to a new random location that is on the canvas. We will use the random integer function.</p>
+                                        <img class="enlargeImage" src="images/get_the_gold/clockYPosition.gif"></img>
+                                        <p></p>
+                                        <p>To make things easier you can duplicate your blocks for the y-position and change the components accordingly:</p>
+                                        <img class="enlargeImage" src="images/get_the_gold/clockXPosition.gif"></img>
+                                        <p></p>
+                                        <p><b>Test your code.</b> If your pirate ship doesn't touch the coin for a while, does the coin move to a new position?</p>
+                                </div>
+
+                                <div class="tutorialContentPage">
+                                        <h4>6. Reset Button</h4>
+                                        <p>Finally we will set up the reset button so that the coin reappears and the user can play again.</p>
+                                        <img class="enlargeImage" src="images/get_the_gold/resetButton.gif"></img>
+                                        <p></p>
+                                        <p>Using the when ResetButton.Click block, set the coinSprite visibility to true. This will make the coin visible again.</p>
+                                        <img class="enlargeImage" src="images/get_the_gold/resetVisibility.gif"></img>
+                                        <p></p>
+                                        <p><b>Test your code.</b> Does the coin reappear if you press the reset button?</p>
+                                </div>
+
+                                <div class="tutorialNextButtonContainer" style="width:100%;text-align:center;">
+                                        <button type="button" class="btn btn-success btn-lg tutorialNextButton" style="font-size:24pt;">Next Step</button>
+                                </div>
+
+                        </div>
+
+                        <h3>Share your App</h3>
+                        <div class="setup" id="share_app"></div>
 
 
-</div>
-<div id="serverTutorialId" style="display:none;">1</div>
-</body>
-<script src="../scripts/tabHandler.js"></script>
-<script src="../scripts/tutorialPage.js"></script>
-<script src="../scripts/shareAndPublish.js"></script>
+                        <h3>Published apps</h3>
+                        <div>
+                                <div id="container">
+                                        <div class="projectbox"> 
+                                                <img class="enlargeImage" src="https://farm3.staticflickr.com/2510/32777057931_d96656a03d_m.jpg" alt="some_text" class="projectimage" />
+                                                <div class="projecttext"><span> Hello World</span> </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+                <div id="howToAccordion" class="accordion" style="display:none">
+
+
+                </div>
+                <div id="serverTutorialId" style="display:none;">1</div>
+        </body>
+        <script src="../scripts/tabHandler.js"></script>
+        <script src="../scripts/tutorialPage.js"></script>
+        <script src="../scripts/shareAndPublish.js"></script>
 
 </html>
