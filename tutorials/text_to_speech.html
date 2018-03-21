@@ -1,171 +1,171 @@
 <!doctype html>
 <html lang="en">
-        <head>
-                <meta charset="utf-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                <title>Talk to Me</title>
-                <link rel="stylesheet" href="../css/scrollstyle.css">
-                <link rel="stylesheet" href="../css/style.css">
-                <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-                <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-                <script src="../scripts/utils.js"></script>
-                <script>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Talk to Me</title>
+    <link rel="stylesheet" href="../css/scrollstyle.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../scripts/utils.js"></script>
+    <script>
 $(window).bind('resize', function() {
-        console.log("window resized")
+  console.log("window resized")
 });
-                </script>
+    </script>
 
-                <script>
+    <script>
 $( function() {
-        $( ".accordion" ).accordion({heightStyle: "content",activate: function( event, ui ) {
-                sendAnalyticsEvent( {
-                        hitType: 'event',
-                        eventCategory: 'Guide-' + document.getElementById("serverTutorialId").innerHTML,
-                        eventAction: 'headerClick',
-                        eventLabel: ui.newHeader.text()
-                });
+  $( ".accordion" ).accordion({heightStyle: "content",activate: function( event, ui ) {
+    sendAnalyticsEvent( {
+      hitType: 'event',
+      eventCategory: 'Guide-' + document.getElementById("serverTutorialId").innerHTML,
+      eventAction: 'headerClick',
+      eventLabel: ui.newHeader.text()
+    });
 
-        }});
+  }});
 
-        $( ".widget input[type=submit], .widget a, .widget button" ).button();
-        //$( "button, input, a" ).click( );
+  $( ".widget input[type=submit], .widget a, .widget button" ).button();
+  //$( "button, input, a" ).click( );
 } );
-                </script>
+    </script>
 
-                <script>
+    <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-31803258-2', 'auto');
 ga('send', 'pageview');
 
-                </script>
-        </head>
-        <body>
+    </script>
+  </head>
+  <body>
 
-                <div style="width:100%;background-color:#8fc202;color:white;text-align:center;margin-bottom:5px;">
-                        <span style="font-size:14pt;font-weight:bold">Mobile App Guide</span>
-                </div>
+    <div style="width:100%;background-color:#8fc202;color:white;text-align:center;margin-bottom:5px;">
+      <span style="font-size:14pt;font-weight:bold">Mobile App Guide</span>
+    </div>
 
-                <div style="width:100%;height: 40px;text-align:center;background-color: #f6f6f6;margin-bottom: 10px;">
-                        <div id="youthMobilePowerTab" style="float:left;height:30px;width:50%;background-color: #ccdea8;padding-top: 5px;padding-bottom: 5px;">App Guide</div>
-                        <div id="howToTab" style="float:left;height:30px;width:50%;background-color: #f6f6f6;padding-top: 5px;padding-bottom: 5px;">How To</div>
-                </div>
+    <div style="width:100%;height: 40px;text-align:center;background-color: #f6f6f6;margin-bottom: 10px;">
+      <div id="youthMobilePowerTab" style="float:left;height:30px;width:50%;background-color: #ccdea8;padding-top: 5px;padding-bottom: 5px;">App Guide</div>
+      <div id="howToTab" style="float:left;height:30px;width:50%;background-color: #f6f6f6;padding-top: 5px;padding-bottom: 5px;">How To</div>
+    </div>
 
-                <div id="newAccordion" class="accordion">
+    <div id="newAccordion" class="accordion">
 
-                        <h3>Connect your App</h3>
-                        <div class="setup" id="connect_app"></div>
+      <h3>Connect your App</h3>
+      <div class="setup" id="connect_app"></div>
 
-                        <h3>Talk to Me Tutorial</h3>
+      <h3>Talk to Me Tutorial</h3>
 
-                        <div class="tutorialContainer">
+      <div class="tutorialContainer">
 
-                                <div class="tutorialNavigationHeader"></div>
+        <div class="tutorialNavigationHeader"></div>
 
-                                <div class="tutorialContentPage">
-                                        <h4>1. Introduction</h4>
-                                        <img class="tutVid" src="images/text_to_speech/tutVideo.png" onclick="getTutorialVideo('Vdo8UdkgDD8')">
-                                        <p>Get started with App Inventor by creating an app that translates text to speech!</p>
-                                        <p>Connect using the companion app to test your work on your mobile device. If you don't know how to connect, <a href="#" class="setup">click here</a>.</p>
-                                </div>
+        <div class="tutorialContentPage">
+          <h4>1. Introduction</h4>
+          <img class="tutVid" src="images/text_to_speech/tutVideo.png" onclick="getTutorialVideo('Vdo8UdkgDD8')">
+          <p>Get started with App Inventor by creating an app that translates text to speech!</p>
+          <p>Connect using the companion app to test your work on your mobile device. If you don't know how to connect, <a href="#" class="setup">click here</a>.</p>
+        </div>
 
-                                <div class="tutorialContentPage">
-                                        <h4>1. Add a button</h4>
-                                        <p> Find the <a href="#" data-toggle="tooltip" data-html="true" title="Choose componenets<img class='tooltipImage' src='images/text_to_speech/buttonComponent.png'/>">Button Component</a> in the User Interface section of your Pallete. Drag it onto your Viewer. A new button will now appear on the Viewer.
-                                        <img class="enlargeImage" src="images/text_to_speech/addButton.png"></img>
-                                        <p>Check to see if you can see your button in your companion app.</p>
-                                        <img class="enlargeImage" style="width:70%" src="images/text_to_speech/addedButton.png"></img>
-                                </div>
+        <div class="tutorialContentPage">
+          <h4>1. Add a button</h4>
+          <p> Find the <a href="#" data-toggle="tooltip" data-html="true" title="Choose componenets<img class='tooltipImage' src='images/text_to_speech/buttonComponent.png'/>">Button Component</a> in the User Interface section of your Pallete. Drag it onto your Viewer. A new button will now appear on the Viewer.
+          <img class="enlargeImage" src="images/text_to_speech/addButton.png"></img>
+          <p>Check to see if you can see your button in your companion app.</p>
+          <img class="enlargeImage" style="width:70%" src="images/text_to_speech/addedButton.png"></img>
+        </div>
 
-                                <div class="tutorialContentPage">  
-                                        <h4>2. Change button text</h4>
-                                        <p>In the properties panel, change the text for Button1. Under the Text property, replace the existing text with "Talk To Me".</p>
-                                        <img class="enlargeImage" src="images/text_to_speech/talkText.png" alt="some_text">
-                                        <p>Notice that the text on your app's button changes right away.</p>
-                                </div>
+        <div class="tutorialContentPage">  
+          <h4>2. Change button text</h4>
+          <p>In the properties panel, change the text for Button1. Under the Text property, replace the existing text with "Talk To Me".</p>
+          <img class="enlargeImage" src="images/text_to_speech/talkText.png" alt="some_text">
+          <p>Notice that the text on your app's button changes right away.</p>
+        </div>
 
-                                <div class="tutorialContentPage">
-                                        <h4>3. Add TextToSpeech componenet</h4>
-                                        <p>Go to the Media drawer in the Palette.</p>
-                                        <img class="enlargeImage" src="images/text_to_speech/clickMedia.png" style="width:70%" alt="some_text">
-                                        <p>Find the TextToSpeech component. Drag and drop it onto your Viewer. It will appear under "Non-visible components."</p>
-                                        <img class="enlargeImage" src="images/text_to_speech/textToSpeech.png" alt="some_text">
-                                </div>
+        <div class="tutorialContentPage">
+          <h4>3. Add TextToSpeech componenet</h4>
+          <p>Go to the Media drawer in the Palette.</p>
+          <img class="enlargeImage" src="images/text_to_speech/clickMedia.png" style="width:70%" alt="some_text">
+          <p>Find the TextToSpeech component. Drag and drop it onto your Viewer. It will appear under "Non-visible components."</p>
+          <img class="enlargeImage" src="images/text_to_speech/textToSpeech.png" alt="some_text">
+        </div>
 
-                                <div class="tutorialContentPage">
-                                        <h4>4. Add Button1 click handler</h4>
-                                        <p>It's time to tell your app what to do. The Blocks Editor is where you program the behavior of your app. Click the button "Blocks" to move over to the Blocks Editor.</p>
-                                        <img class="enlargeImage" src="images/cipher_translation/clickBlocks.png" alt="some_text">
-                                        <p>Click on <img src="images/images/button.png"> Button1 under Screen1.</p>
-                                        <img class="enlargeImage" src="images/text_to_speech/clickButton1.png" style="width:90%" alt="some_text">
-                                        <p>Choose <span class="blocks">when Button1.Click</span>.</p> <!-- Or should I add this as a mini-block? -->
-                                        <img class="enlargeImage" src="images/text_to_speech/chooseButton1.png" style="width:90%" alt="some_text">
-                                        <p>Drag the block to the workspace.</p>
-                                        <div id="blocklyDiv" style="height: 100px; width: 200px;"></div> <!-- Added a block instead of an image? -->
-                                </div>
+        <div class="tutorialContentPage">
+          <h4>4. Add Button1 click handler</h4>
+          <p>It's time to tell your app what to do. The Blocks Editor is where you program the behavior of your app. Click the button "Blocks" to move over to the Blocks Editor.</p>
+          <img class="enlargeImage" src="images/cipher_translation/clickBlocks.png" alt="some_text">
+          <p>Click on <img src="images/images/button.png"> Button1 under Screen1.</p>
+          <img class="enlargeImage" src="images/text_to_speech/clickButton1.png" style="width:90%" alt="some_text">
+          <p>Choose <span class="blocks">when Button1.Click</span>.</p> <!-- Or should I add this as a mini-block? -->
+          <img class="enlargeImage" src="images/text_to_speech/chooseButton1.png" style="width:90%" alt="some_text">
+          <p>Drag the block to the workspace.</p>
+          <div id="blocklyDiv" style="height: 100px; width: 200px;"></div> <!-- Added a block instead of an image? -->
+        </div>
 
-                                <div class="tutorialContentPage">
-                                        <h4>5. Add TextToSpeech "Speak" procedure</h4>
-                                        <p>Click on TextToSpeech.</p>
-                                        <img class="enlargeImage" src="images/text_to_speech/clickTextToSpeech.png" style="width:80%" alt="some_text">
-                                        <p>Drag out and connect "call TextToSpeech1.Speak".</p>
-                                        <img class="enlargeImage" src="images/text_to_speech/addTextToSpeech.png" style="width:70%" alt="some_text">
-                                </div>
+        <div class="tutorialContentPage">
+          <h4>5. Add TextToSpeech "Speak" procedure</h4>
+          <p>Click on TextToSpeech.</p>
+          <img class="enlargeImage" src="images/text_to_speech/clickTextToSpeech.png" style="width:80%" alt="some_text">
+          <p>Drag out and connect "call TextToSpeech1.Speak".</p>
+          <img class="enlargeImage" src="images/text_to_speech/addTextToSpeech.png" style="width:70%" alt="some_text">
+        </div>
 
-                                <div class="tutorialContentPage">
-                                        <h4>5. Add Text blocks</h4>
-                                        <p>In Built-in blocks, click Text.</p>
-                                        <img style="width:60%" class="enlargeImage" src="images/text_to_speech/clickText.png" alt="some_text">
-                                        <p>Drag out an empty quotes ("") block.</p>
-                                        <img class="enlargeImage" src="images/text_to_speech/addText.png" alt="some_text">
-                                        <p>Enter whatever text you want to be spoken into the empty string.</p>
-                                        <img class="enlargeImage" src="images/text_to_speech/enterText.png" alt="some_text">
-                                </div>
-
-
-                                <div class="tutorialContentPage">
-                                        <h4>5. Test your app!</h4>
-                                        <p>Can you make your app speak when the button is pressed?</p>
-
-                                        <p>What about having the app say something that the user types in? Use <a href="">this</a> tutorial to help you.</p>
-
-                                        <p>Next, try the "Text-to-Speech Expansion" tutorial or any app of your own! Use the how-tos if you get stuck on something.</p>
-                                </div>
-
-                                <div class="tutorialNextButtonContainer" style="width:100%;text-align:center;">
-                                        <button type="button" class="btn btn-success btn-lg tutorialNextButton" style="font-size:24pt;">Next Step</button>
-                                </div>
-                        </div>
+        <div class="tutorialContentPage">
+          <h4>5. Add Text blocks</h4>
+          <p>In Built-in blocks, click Text.</p>
+          <img style="width:60%" class="enlargeImage" src="images/text_to_speech/clickText.png" alt="some_text">
+          <p>Drag out an empty quotes ("") block.</p>
+          <img class="enlargeImage" src="images/text_to_speech/addText.png" alt="some_text">
+          <p>Enter whatever text you want to be spoken into the empty string.</p>
+          <img class="enlargeImage" src="images/text_to_speech/enterText.png" alt="some_text">
+        </div>
 
 
-                </div>
+        <div class="tutorialContentPage">
+          <h4>5. Test your app!</h4>
+          <p>Can you make your app speak when the button is pressed?</p>
 
-                <h3>Share your App</h3>
-                <div class="setup" id="share_app"></div>
+          <p>What about having the app say something that the user types in? Use <a href="">this</a> tutorial to help you.</p>
 
+          <p>Next, try the "Text-to-Speech Expansion" tutorial or any app of your own! Use the how-tos if you get stuck on something.</p>
+        </div>
 
-                <h3>Published apps</h3>
-                <div>
-                        <div id="container">
-                                <div class="projectbox"> 
-                                        <img class="enlargeImage" src="https://farm3.staticflickr.com/2510/32777057931_d96656a03d_m.jpg" alt="some_text" class="projectimage" />
-                                        <div class="projecttext"><span> Hello World</span> </div>
-                                </div>
-                        </div>
-                </div>
-                </div>
-
-                <div id="howToAccordion" class="accordion" style="display:none">
+        <div class="tutorialNextButtonContainer" style="width:100%;text-align:center;">
+          <button type="button" class="btn btn-success btn-lg tutorialNextButton" style="font-size:24pt;">Next Step</button>
+        </div>
+      </div>
 
 
-                </div>
-                <div id="serverTutorialId" style="display:none;">1</div>
-        </body>
-        <script src="../scripts/tabHandler.js"></script>
-        <script src="../scripts/tutorialPage.js"></script>
-        <script src="../scripts/shareAndPublish.js"></script>
+    </div>
+
+    <h3>Share your App</h3>
+    <div class="setup" id="share_app"></div>
+
+
+    <h3>Published apps</h3>
+    <div>
+      <div id="container">
+        <div class="projectbox"> 
+          <img class="enlargeImage" src="https://farm3.staticflickr.com/2510/32777057931_d96656a03d_m.jpg" alt="some_text" class="projectimage" />
+          <div class="projecttext"><span> Hello World</span> </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div id="howToAccordion" class="accordion" style="display:none">
+
+
+    </div>
+    <div id="serverTutorialId" style="display:none;">1</div>
+  </body>
+  <script src="../scripts/tabHandler.js"></script>
+  <script src="../scripts/tutorialPage.js"></script>
+  <script src="../scripts/shareAndPublish.js"></script>
 
 </html>
