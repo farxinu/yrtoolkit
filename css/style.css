@@ -10,9 +10,9 @@ table {
 	background-position: top;
 }
 
-a {
+/*a {
 	color:blue !important;
-}
+}*/
 
 p.small {
    line-height: 
@@ -339,7 +339,7 @@ body {
 }
 
 .tutVid {
-  max-width: 250px;
+  max-width: 200px;
 }
 
 /* Tutorials */
