@@ -177,6 +177,10 @@ body {
   margin-left: 10px;
 }
 
+h3.tutorialTabTitle {
+  font-weight: bold;
+}
+
 /* Inline blocks properties */
 
 .control {
