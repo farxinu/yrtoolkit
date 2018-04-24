@@ -68,7 +68,7 @@ window.getTutorialVideo = function(tutorialId) {
     for (var i = 0;i<allIcons.length;i++) {
       var iconImg = document.createElement('img');
       $(iconImg).addClass('iconImg')
-      iconImg.src = "../../images/images/" + $(allIcons[i]).attr('alt') + '.png';
+      iconImg.src = "../../images/icons/" + $(allIcons[i]).attr('alt') + '.png';
       allIcons[i].appendChild(iconImg);
     }
   }
