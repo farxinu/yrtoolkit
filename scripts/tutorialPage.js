@@ -268,7 +268,7 @@ window.getTutorialVideo = function(tutorialId) {
     var howTos = document.getElementsByClassName("setup");
     for (var i=0;i<howTos.length;i++) {
       var tempId = "#" + $(howTos[i]).attr('id');
-      $(tempId).load("tutorials/howtos/" + $(howTos[i]).attr('id') + ".html", function(){
+      $(tempId).load("howtos/" + $(howTos[i]).attr('id') + ".html", function(){
         $(tempId).ready(function(){
           setupTutorial();
         });

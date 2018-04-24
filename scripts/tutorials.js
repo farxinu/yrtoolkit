@@ -302,7 +302,7 @@ $(document).ready( function() {
     });
 
     var howToClickHandler = function(howToUrl) {
-      previousHowToToLoad.url = "howtos/" + howToUrl
+      previousHowToToLoad.url = "../howtos/" + howToUrl
       $(".content").load(previousHowToToLoad.url, function() {
         switchToTab("howToTab");
         assignEventHandlers();
